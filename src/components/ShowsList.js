@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -16,10 +16,16 @@ const ShowList = () => {
   const endedShowsCount = endedShows.length;
   const runningShows = shows.filter((show) => show.status === 'Running');
   const runningShowsCount = runningShows.length;
+  const [searchInput, setSearchInput] = useState('');
+  
+  const filteredShows = shows.filter((show) =>
+    show.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
 
   useEffect(() => {
     dispatch(fetchShows());
   }, [dispatch]);
+
 
   if (status === 'loading') {
     return <div>Loading...</div>;
@@ -43,6 +49,12 @@ const ShowList = () => {
       <div className="mobileHeader">
         <MobileHomeHeader />
       </div>
+      <input
+        type="text"
+        placeholder="Search shows..."
+        className="webSearch"
+        onChange={(e) => setSearchInput(e.target.value)}
+      />
 
       <div className="mobileHeaderExtension">
         <div className="extensionChildMain">
@@ -89,7 +101,7 @@ const ShowList = () => {
 
       <h1 className="webHeader">Home</h1>
       <ul className="Shows">
-        {shows.map((show) => (
+        {filteredShows.map((show) => (
           <div key={show.id} className="mObjectContainer">
             <li>
               <div className="ShowsItems">

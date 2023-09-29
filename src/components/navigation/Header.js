@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Menu from '../../assets/menu';
 import Mic from '../../assets/mic';
@@ -6,6 +7,7 @@ import Search from '../../assets/search';
 import Setting from '../../assets/settings';
 import Back from '../../assets/back';
 import './Header.css';
+
 
 export const WebHeader = () => (
   <nav className="webNav">
@@ -40,7 +42,9 @@ export const WebHeader = () => (
   </nav>
 );
 
-export const MobileHomeHeader = () => (
+export const MobileHomeHeader = () => {
+     
+  return (
   <nav className="mobileNav">
     <ul className="mNavItems">
       <li className="mNavItemsStart">
@@ -52,15 +56,13 @@ export const MobileHomeHeader = () => (
         <a><Network /></a>
         <a><Mic /></a>
         <a id="mobileSearch">
-          <input placeholder="search" />
-          {' '}
           <Search />
         </a>
       </li>
     </ul>
   </nav>
 );
-
+}
 export const MobileSeasonsHeader = () => (
   <nav className="mobileNav">
     <ul className="mNavItems">

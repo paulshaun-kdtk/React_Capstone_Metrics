@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const initialState = {
   show: null,
@@ -9,12 +8,24 @@ const initialState = {
 };
 
 export const fetchShowDetails = createAsyncThunk('showDetails/fetchShowDetails', async (showId) => {
-  const showResponse = await axios.get(`https://api.tvmaze.com/shows/${showId}`);
-  const seasonsResponse = await axios.get(`https://api.tvmaze.com/shows/${showId}/seasons`);
-  return {
-    show: showResponse.data,
-    seasons: seasonsResponse.data,
-  };
+  try {
+    const showResponse = await fetch(`https://api.tvmaze.com/shows/${showId}`);
+    const seasonsResponse = await fetch(`https://api.tvmaze.com/shows/${showId}/seasons`);
+
+    if (!showResponse.ok || !seasonsResponse.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const showData = await showResponse.json();
+    const seasonsData = await seasonsResponse.json();
+
+    return {
+      show: showData,
+      seasons: seasonsData,
+    };
+  } catch (error) {
+    throw new Error(`Error fetching show details: ${error.message}`);
+  }
 });
 
 const showDetailsSlice = createSlice({
