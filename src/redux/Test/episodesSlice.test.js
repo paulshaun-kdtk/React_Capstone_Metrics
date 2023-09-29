@@ -35,5 +35,4 @@ describe('episodesSlice', () => {
 
     expect(episodesReducer(initialState, actions[0])).toEqual(expectedState);
   });
-
 });

@@ -17,15 +17,12 @@ const ShowList = () => {
   const runningShows = shows.filter((show) => show.status === 'Running');
   const runningShowsCount = runningShows.length;
   const [searchInput, setSearchInput] = useState('');
-  
-  const filteredShows = shows.filter((show) =>
-    show.name.toLowerCase().includes(searchInput.toLowerCase())
-  );
+
+  const filteredShows = shows.filter((show) => show.name.toLowerCase().includes(searchInput.toLowerCase()));
 
   useEffect(() => {
     dispatch(fetchShows());
   }, [dispatch]);
-
 
   if (status === 'loading') {
     return <div>Loading...</div>;

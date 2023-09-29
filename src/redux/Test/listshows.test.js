@@ -35,5 +35,4 @@ describe('showSlice', () => {
 
     expect(showReducer(initialState, actions[0])).toEqual(expectedState);
   });
-
 });

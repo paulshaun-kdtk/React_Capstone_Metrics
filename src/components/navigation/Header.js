@@ -8,7 +8,6 @@ import Setting from '../../assets/settings';
 import Back from '../../assets/back';
 import './Header.css';
 
-
 export const WebHeader = () => (
   <nav className="webNav">
     <ul className="wNavItems">
@@ -42,9 +41,7 @@ export const WebHeader = () => (
   </nav>
 );
 
-export const MobileHomeHeader = () => {
-     
-  return (
+export const MobileHomeHeader = () => (
   <nav className="mobileNav">
     <ul className="mNavItems">
       <li className="mNavItemsStart">
@@ -62,7 +59,6 @@ export const MobileHomeHeader = () => {
     </ul>
   </nav>
 );
-}
 export const MobileSeasonsHeader = () => (
   <nav className="mobileNav">
     <ul className="mNavItems">

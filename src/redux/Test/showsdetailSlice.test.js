@@ -37,6 +37,4 @@ describe('showDetailsSlice', () => {
 
     expect(showDetailsReducer(initialState, actions[0])).toEqual(expectedState);
   });
-
-
 });
