@@ -24,11 +24,6 @@ export const WebHeader = () => (
           </a>
           <a>
             {' '}
-            <Search />
-            {' '}
-          </a>
-          <a>
-            {' '}
             <Mic />
           </a>
           <a>

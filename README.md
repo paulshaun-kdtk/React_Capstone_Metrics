@@ -37,22 +37,20 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# Live app<a name="live-link"></a>
-** https://paulshaun-kdtk.github.io/capstone-Car-Show/
+
 
 # Video explanation of app <a name="video-explanation"> </a>
 
-** https://www.loom.com/share/20f584469444424c98a00431bf840a8b
+** https://www.loom.com/share/8b94e6284f314a4ea065b9fd6f6c050a?sid=b4c66ec2-7e91-4c18-934d-2efa01f821d3
 
 # 📖 React Capstone TV Shows Metrics <a name="about-project"></a>
 
-**React Capstone TV Shows Metrics:** is a simple advertisement site, configured with linters for html, css  and javascript
+**React Capstone TV Shows Metrics:** is a simple advertisement site, configured with linters for react, and built with react-redux
 
 ## 🛠 Built With <a name="built-with"></a>
- HTMl
- CSS
- Bootstrap
+ React-redux
  Javascript
+ CSS
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -70,7 +68,7 @@
 <!-- Features -->
 
 ### Link to Loom technical presentation
-<a href="https://www.loom.com/share/a863515a0867407a8c6324ce43d68ba2?sid=2fb8d742-a76f-4d44-98ac-8a01399f7b6f"> Lomm technical presentaion </a>
+<a href="https://www.loom.com/share/8b94e6284f314a4ea065b9fd6f6c050a?sid=b4c66ec2-7e91-4c18-934d-2efa01f821d3"> Lomm technical presentaion </a>
 
 ### Key Features <a name="key-features"></a>
 

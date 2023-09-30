@@ -42,16 +42,16 @@ const ShowList = () => {
 
       <div className="webHeader">
         <WebHeader />
+        <input
+          type="text"
+          placeholder="Search here..."
+          className="webSearch"
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
       </div>
       <div className="mobileHeader">
         <MobileHomeHeader />
       </div>
-      <input
-        type="text"
-        placeholder="Search shows..."
-        className="webSearch"
-        onChange={(e) => setSearchInput(e.target.value)}
-      />
 
       <div className="mobileHeaderExtension">
         <div className="extensionChildMain">
@@ -93,7 +93,6 @@ const ShowList = () => {
             <a>learn More</a>
           </span>
         </div>
-
       </div>
 
       <h1 className="webHeader">Home</h1>
@@ -102,40 +101,16 @@ const ShowList = () => {
           <div key={show.id} className="mObjectContainer">
             <li>
               <div className="ShowsItems">
-                <img src={show.image?.medium} alt={show.name} />
-                {' '}
-                <br />
+                <Link to={`/show/${show.id}/seasons`}>
+                  <img src={show.image?.medium} alt={show.name} />
+                </Link>
                 <div className="ShowsItemsInfo">
-                  <Link to={`/show/${show.id}/seasons`}>
-                    {' '}
-                    <b>
-                      {show.name}
-                      {' '}
-                    </b>
-                  </Link>
-                  {' '}
-                  <br />
                   <span>
-                    Rating:
+                    Rating: &nbsp;
                     <i>
                       {show.rating.average}
                       {' '}
                     </i>
-                  </span>
-                  {' '}
-                  <span>
-                    Show Status:
-                    <i>
-                      {' '}
-                      {show.status}
-                      {' '}
-                    </i>
-                  </span>
-                  <br />
-                  {' '}
-                  <span>
-                    Premier Date:
-                    <i>{show.premiered}</i>
                   </span>
                 </div>
               </div>

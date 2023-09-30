@@ -2,7 +2,7 @@
   --heading-card: #0465cd;
 }
 
-@media (min-width: 300px) and (max-width: 450px) {
+@media (min-width: 250px) and (max-width: 450px) {
   .App {
     background: #000;
   }
@@ -18,11 +18,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #073567;
+    margin: 0;
     padding: 4%;
   }
 
-  .Shows > li > img {
-    width: 40%;
+  .mObjectContainer {
+    padding: 20px;
+    background: #073567;
   }
 
   .webHeader {
@@ -86,17 +89,27 @@
   /* shows */
 
   .ShowsItems {
-    display: flex;
-    justify-content: space-evenly;
+    background: #073567;
   }
 
-  .ShowsItems {
-    margin-left: -12%;
+  .ShowsItems > a > img {
+    width: 8rem;
   }
 
   .ShowsItemsInfo {
     align-self: center;
     padding: 8px;
+    width: 6rem;
+    background: #073567;
+    margin: 0;
+  }
+
+  .ShowsItemsInfo > span {
+    background: #073567;
+  }
+
+  .ShowsItemsInfo > span > i {
+    background-color: #073567;
   }
 
   /* seasons */
@@ -194,10 +207,36 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background: #007bff;
+    margin: 0;
+  }
+
+  .webHeader {
+    background: #007bff;
+    margin: 0;
+  }
+
+  .webSearch {
+    background: white;
+    padding: 8px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    float: right;
+    margin: 0 1%;
+  }
+
+  .ShowsItemsInfo {
+    background: #0465cd;
+  }
+
+  .ShowsItemsInfo > span {
+    background: #0465cd;
   }
 
   .ShowsItemsInfo > span > i {
-    background-color: #000;
+    background-color: #0465cd;
   }
 
   .mobileHeader {
@@ -249,8 +288,9 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-}
 
-.mObjectContainer {
-  padding: 20px;
+  .mObjectContainer {
+    padding: 20px;
+    background: #0465cd;
+  }
 }
