@@ -1,0 +1,89 @@
+:root {
+  --primary-background: #007bff;
+}
+
+.webNav {
+  display: flex;
+  width: 100%;
+  height: 4.5rem;
+  background-color: var(--primary-background);
+  border-bottom: 1px solid #141313;
+}
+
+.wNavItems {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-background);
+  width: 100%;
+}
+
+.wNavItems > li {
+  background: var(--primary-background);
+  border: none;
+  outline: none;
+}
+
+.wNavObjects {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-background);
+}
+
+.wNavObjects > input {
+  background-color: #fff;
+  color: #000;
+}
+
+.wNavObjects > a,
+div > svg {
+  padding: 5px 10px;
+}
+
+/* mobile */
+
+.mobileNav {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--primary-background);
+}
+
+.mNavItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--primary-background);
+}
+
+.mNavItems > li {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--primary-background);
+}
+
+.mNavItems > li > a {
+  padding: 0.1rem;
+  background: var(--primary-background);
+}
+
+.mNavItemsStart {
+  margin: 0 -12%;
+}
+
+.mNavItemsStart > a {
+  display: flex;
+  margin: 1% 0;
+}
+
+#mobileSearch {
+  display: flex;
+}
+
+#mobileSearch > input {
+  width: 60px;
+  height: 15px;
+  background-color: white;
+  color: #000;
+  border: none;
+  outline: none;
+}

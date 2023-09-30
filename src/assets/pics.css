@@ -1,0 +1,11 @@
+:root {
+  --primary-background: #007bff;
+}
+
+.Image {
+  background-color: var(--primary-background);
+}
+
+.Image > svg {
+  background-color: var(--primary-background);
+}
