@@ -38,7 +38,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # Live app<a name="live-link"></a>
-** https://paulshaun-kdtk.github.io/React_Capstone_Metrics/
+** https://tvshowsmetrics.onrender.com/
 
 # Video explanation of app <a name="video-explanation"> </a>
 
