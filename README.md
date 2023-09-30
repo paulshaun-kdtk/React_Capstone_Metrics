@@ -5,7 +5,7 @@
   
   <br/>
 
-# Car-Show 
+# React Capstone TV Shows Metrics
 
 
 </div>
@@ -37,20 +37,22 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-
+# Live app<a name="live-link"></a>
+** https://paulshaun-kdtk.github.io/React_Capstone_Metrics/
 
 # Video explanation of app <a name="video-explanation"> </a>
 
-** https://www.loom.com/share/8b94e6284f314a4ea065b9fd6f6c050a?sid=b4c66ec2-7e91-4c18-934d-2efa01f821d3
+** https://www.loom.com/share/f60daa09e1064c9d8cc410bda46e4bd4?sid=8e83d02f-7ac7-467c-9719-d4804680690d
 
 # 📖 React Capstone TV Shows Metrics <a name="about-project"></a>
 
-**React Capstone TV Shows Metrics:** is a simple advertisement site, configured with linters for react, and built with react-redux
+**React Capstone TV Shows Metrics:** is a simple tv shows promotion site, configured with linters for react, and built with react-redux
 
 ## 🛠 Built With <a name="built-with"></a>
  React-redux
  Javascript
  CSS
+
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
